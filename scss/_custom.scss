@@ -1,0 +1,24 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won’t be available)
+
+// Couleurs Zoo Arcadia
+$primary:   #2a7e50;  // vert nature → couleur principale
+$secondary: #da811b;  // orange accent → couleur secondaire
+$warning:   #f2a007;  // jaune doré → alerte / mise en valeur
+$dark:      #212529;  // gris anthracite → texte / éléments sombres
+$light:     #f2f2f2;  // gris clair → fond / contraste
+
+// Typographies Zoo Arcadia
+$font-family-sans-serif: "Montserrat", Arial, sans-serif !default;  
+// Titres, navigation, interface
+$font-family-serif: "Hind Madurai", Georgia, serif !default;  
+// Paragraphes, textes longs
+$font-family-accent: "Playfair Display", serif !default;  
+// Citations, accroches, éléments décoratifs
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
