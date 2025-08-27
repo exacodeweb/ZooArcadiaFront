@@ -1,5 +1,6 @@
 @import url('/node_modules/bootstrap-icons/font/bootstrap-icons.css');
 @import 'custom';
+@import "../node_modules/bootstrap/scss/bootstrap";/* importer bootstrap (depuis node_modules) */ //ex: carousel
 
 html {
   position: relative;
@@ -7,17 +8,86 @@ html {
 }
 
 main {
-  margin-bottom: 150px;
+  margin-bottom: 0px;/*250px*/
 }
 
 footer.footer {
   padding: 15px;
-  position: absolute;
+  /*position: absolute;*/ z-index: 1;
   bottom: 0;
   width: 100%;
+}
+
+/*footer.footer a:hover {
+  color: #f2a007;
+}*/
+
+ a {
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: $secondary; // l’orange accent que tu as défini
+  text-decoration: underline;
 }
 
 p {
   font-family: $font-family-serif;
   font-size: 18px;
 }
+
+.hero-scene {
+  position: relative;
+  margin-bottom: 15px;
+  &::before{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image: url(../images/FondHeroScene.jpg);
+  background-size: cover;
+  filter: brightness(0.5); // luminosité 30%
+}
+
+*{
+//Positionner les éléments devant le ::before
+  position:relative;
+}
+
+.hero-scene, .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*margin-top: 15px;*/
+}
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+
+    /* images d-block */
+    .d-block {
+      /*.profile-pic*/
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+      margin: auto;
+    }
+
+    /* Icônes du carousel avec fond rond */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      background-size: 70%;
+    }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">-->
+  <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+  <!--<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
@@ -13,91 +14,89 @@
   <link rel="stylesheet" href="./scss/main.css">
   <title>Accueil - Zoo Arcadia</title>
 </head>
+
 <body>
   <header>
-    <!--Le menu du site Zoo Arcadia<i class="bi bi-airplane"></i>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="primary">-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success" data-bs-theme="success">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Zoo Arcadia</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="/">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/">Habitat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Galerie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mon compte</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Connexion/Déconnexion</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" data-bs-theme="success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Zoo Arcadia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#habitats">Habitats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#animaux">Animaux</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mon compte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connexion/Déconnexion</a>
+            </li>
+          </ul>
 
-    </div>
-  </div>
-</nav>
-  
+        </div>
+      </div>
+    </nav>
+
   </header>
   <main id="main-page">
     <!-- Le contenu de ma page sera injecter ici -->
   </main>
 
-  <footer class="bg-success text-white text-center footer">
-    <!--Le footer de mon site-->
-    <div class="row">
-      <div class="col-12 col-lg-4"><!-- col-12 col-lg-4" -->
+<footer class="bg-success text-center footer py-4">
+  <div class="row text-white">
+    
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
       <h3 class="text-secondary">Nos Horaires</h3>
-      <p>Du lundi au samedi 9:00 - 17:30 </p>
-      </div>
+      <p>Du lundi au samedi<br>9:00 - 17:30</p>
+    </div>
 
-      <div class="col-3 col-lg-4"><!-- col-6 col-lg-4" -->
-         <h3 class="text-secondary">Contact</h3>
-        <p>Zoo Arcadia<br>
-          123 Rue de la Nature<br>
-          35380 Paimpont France<br>
-          04 01 27 25 62<br>
-          contact@zooarcadia.com
-        </p>
-      </div>
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+      <h3 class="text-secondary">Contact</h3>
+      <p>
+        Zoo Arcadia<br>
+        123 Rue de la Nature<br>
+        35380 Paimpont France<br>
+        04 01 27 25 62<br>
+        <a href="mailto:contact@zooarcadia.com" class="text-white text-decoration-none">contact@zooarcadia.com</a>
+      </p>
+    </div>
 
-      <!--<div class="col-3 col-lg-4">--><!-- col-6 col-lg-4" --><!--
-        <p>contact@zooarcadia.com</p>
-      </div>-->
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+      <h3 class="text-secondary">Liens utiles</h3><!-- Liens rapides -->
+      <p>
+        <a href="../mentions/mentions_legales.html" class="text-white text-decoration-none">Mentions légales</a><br>
+        <a href="#services" class="text-white text-decoration-none">A propos de ce site</a>
+      </p>
+    </div>
 
-        <div class="col-3 col-lg-4">
-          <h3 class="text-secondary">Liens rapides</h3>
-          <!--<ul>
-            <li>-->
-              <p><a href="../mentions/mentions_legales.html">Mentions légales</a><br>
-            <!--</li>
-            <li>-->
-              <a href="#services">A propos de ce site</a></p>
-            <!--</li>
-          </ul>-->
-        </div>
+  </div>
 
-      <footer class="text-center py-4 col-12"><!---->
-        <div>&copy; 2024 Zoo Arcadia. Tous droits réservés.</div>
-      </footer>
-    <div>
-  </footer>
+  <div class="text-center mt-3 text-white">
+    &copy; 2024 Zoo Arcadia. Tous droits réservés.
+  </div>
+</footer>
 
 </body>
-  <script type="module" src="Router/router.js"></script><!-- Pour inclure le systeme de routage -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </html>
+<script type="module" src="Router/router.js"></script><!-- Pour inclure le systeme de routage -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
 
 <!--
 (D:\DeveloppementWeb\ 
@@ -107,6 +106,15 @@
     │    ├── .git/
     │    ├── .vscode/
     │    │    ├──settings.json
+    │    ├── images/ 
+    │    │    ├──Heros.jpg
+    │    │    ├──
+    │    │    ├──
+    │    ├── node_modules/ 
+    │    │    ├──@popperjs
+    │    │    ├──bootstrap
+    │    │    ├──bootstrap-icons
+    │    │    ├──package-lock.json
     │    ├── pages/ 
     │    │    ├──404.html
     │    │    ├──home.html
@@ -114,8 +122,25 @@
     │    │    ├──allRoutes.js
     │    │    ├──Route.js
     │    │    ├──router.js
+    │    ├── scss/ 
+    │    │    ├──_custom.css
+    │    │    ├──main.css
+    │    │    ├──main.css.map
+    │    │    ├──main.scss
+    │    ├── tests/
+    │    │    ├── test-bootstrap.html
+    │    ├── .gitignore
     │    ├── index.html 
+    │    ├── package-lock.json
+    │    ├── package.json
     │    ├── Readme.md) 
     │    │
     ├──  ProjetParrot-Ecf
+
+
+
+
+
+
+
 -->

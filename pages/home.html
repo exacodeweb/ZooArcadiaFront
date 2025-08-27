@@ -1,4 +1,172 @@
-<h1>Bienvenue sur le site du Zoo Arcadia</h1>
+<!--<link rel="stylesheet" href="../scss/main.css">--><!--pour le carousel-->
+<div class="hero-scene text-center text-white">
+  <div class="hero-scene-content">
+    <p>Toute l'équipe de Zoo vous acceuil au</p>
+    <h1>Zoo Arcadia</h1>
 
+    <button class="btn btn-success">Réserver</button>
+    
+  </div>
+</div>
 
-<button class="btn btn-success">Coucou</button>
+<section id="habitats">
+  <article>
+    <div class="container p-4">
+      <h2 class="text-center text-success">Bienvenue au Zoo Arcadia</h2>
+      <div class="row row-cols-2 align-items-center">
+        <div class="col">
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            In a aliquam ipsum ab labore doloremque? Magni libero mollitia
+            dolores aut est nihil accusamus, quos illum voluptas
+            molestiae voluptate repellat incidunt harum eius vel
+            sunt nesciunt fugiat distinctio aperiam nemo, sequi nisi corporis.
+            Tempora rem, repellat atque libero error vero culpa unde enim repudiandae.
+            Magni voluptatum dicta corporis delectus omnis aliquid.
+          </p>
+        </div>
+        <div>
+          <img class="w-100 rounded" src="../images/savane.jpg">
+        </div>
+      </div>
+
+      <div class="text-center pt-4">
+        <a href="#" class="btn btn-success">Nos Habitats</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="animaux">
+  <article class="bg-dark text-white">
+    <div class="container p-4">
+      <h2 class="text-center text-success">Les Animaux du Zoo</h2>
+      <div class="row row-cols-2 align-items-center">
+
+        <div>
+          <img class="w-100 rounded" src="../images/savane.jpg">
+        </div>
+
+        <div class="col">
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            In a aliquam ipsum ab labore doloremque? Magni libero mollitia
+            dolores aut est nihil accusamus, quos illum voluptas
+            molestiae voluptate repellat incidunt harum eius vel
+            sunt nesciunt fugiat distinctio aperiam nemo, sequi nisi corporis.
+            Tempora rem, repellat atque libero error vero culpa unde enim repudiandae.
+            Magni voluptatum dicta corporis delectus omnis aliquid.
+          </p>
+        </div>
+        <!--<div>
+          <img class="w-100 rounded" src="../images/savane.jpg">
+        </div>-->
+      </div>
+
+      <div class="text-center pt-4">
+        <a href="#" class="btn btn-success">Nos Animaux</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="services">
+  <article>
+    <div class="container p-4">
+      <h2 class="text-center text-success">Des Services pour tous</h2>
+      <div class="row row-cols-2 align-items-center">
+        <div class="col">
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            In a aliquam ipsum ab labore doloremque? Magni libero mollitia
+            dolores aut est nihil accusamus, quos illum voluptas
+            molestiae voluptate repellat incidunt harum eius vel
+            sunt nesciunt fugiat distinctio aperiam nemo, sequi nisi corporis.
+            Tempora rem, repellat atque libero error vero culpa unde enim repudiandae.
+            Magni voluptatum dicta corporis delectus omnis aliquid.
+          </p>
+        </div>
+        <div>
+          <img class="w-100 rounded" src="../images/services-guides.jpg">
+        </div>
+      </div>
+
+      <div class="text-center pt-4 pb-4">
+        <a href="#" class="btn btn-success">Nos Services</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section>
+  <article>
+    <div class="container "><!-- py-5 -->
+      <h2 class="text-center mb-4">Avis des visiteurs</h2>
+
+      <!-- Carrousel Témoignages -->
+      <!--<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">-->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card shadow-sm p-4 text-center testimonial-card">
+            <img src="https://picsum.photos/id/1018/1200/400" class="d-block mb-2" alt="Image 1">              
+              <p>"Superbe visite ! Les animaux sont bien soignés."</p>
+              <div class="text-warning stars">★★★★☆</div>
+              <h5>Marie Dupont</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm p-4 text-center testimonial-card">
+              <img src="https://picsum.photos/id/1037/1200/400" class="d-block mb-2" alt="Image 2">
+              <p>"Un endroit parfait pour une sortie en famille."</p>
+              <div class="text-warning stars">★★★★★</div>
+              <h5>Jean Martin</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contrôles -->
+        <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Bouton Modal -->
+      <div class="text-center mt-4 mb-4">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#avisModal">
+          Ajouter un avis
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Bootstrap -->
+    <div class="modal fade" id="avisModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Laisser un avis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ajouter -->
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Votre nom">
+              <textarea class="form-control mb-3" rows="3" placeholder="Votre avis"></textarea>
+              <select class="form-select mb-3">
+                <option>★★★★★</option>
+                <option>★★★★☆</option>
+                <option>★★★☆☆</option>
+              </select>
+              <button class="btn btn-primary w-100">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
