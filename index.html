@@ -39,7 +39,7 @@
               <a class="nav-link active" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galerie</a>
+              <a class="nav-link active" href="/galerie">Galerie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Mon compte</a>
@@ -52,45 +52,45 @@
         </div>
       </div>
     </nav>
-
   </header>
+
   <main id="main-page">
     <!-- Le contenu de ma page sera injecter ici -->
   </main>
 
-<footer class="bg-success text-center footer py-4">
-  <div class="row text-white">
-    
-    <div class="col-12 col-md-6 col-lg-4 mb-3">
-      <h3 class="text-secondary">Nos Horaires</h3>
-      <p>Du lundi au samedi<br>9:00 - 17:30</p>
+  <footer class="bg-success text-center footer py-4">
+    <div class="row text-white">
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <h3 class="text-secondary">Nos Horaires</h3>
+        <p>Du lundi au samedi<br>9:00 - 17:30</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <h3 class="text-secondary">Contact</h3>
+        <p>
+          Zoo Arcadia<br>
+          123 Rue de la Nature<br>
+          35380 Paimpont France<br>
+          04 01 27 25 62<br>
+          <a href="mailto:contact@zooarcadia.com" class="text-white text-decoration-none">contact@zooarcadia.com</a>
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <h3 class="text-secondary">Liens utiles</h3><!-- Liens rapides -->
+        <p>
+          <a href="../mentions/mentions_legales.html" class="text-white text-decoration-none">Mentions légales</a><br>
+          <a href="#services" class="text-white text-decoration-none">A propos de ce site</a>
+        </p>
+      </div>
+
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4 mb-3">
-      <h3 class="text-secondary">Contact</h3>
-      <p>
-        Zoo Arcadia<br>
-        123 Rue de la Nature<br>
-        35380 Paimpont France<br>
-        04 01 27 25 62<br>
-        <a href="mailto:contact@zooarcadia.com" class="text-white text-decoration-none">contact@zooarcadia.com</a>
-      </p>
+    <div class="text-center mt-3 text-white">
+      &copy; 2024 Zoo Arcadia. Tous droits réservés.
     </div>
-
-    <div class="col-12 col-md-6 col-lg-4 mb-3">
-      <h3 class="text-secondary">Liens utiles</h3><!-- Liens rapides -->
-      <p>
-        <a href="../mentions/mentions_legales.html" class="text-white text-decoration-none">Mentions légales</a><br>
-        <a href="#services" class="text-white text-decoration-none">A propos de ce site</a>
-      </p>
-    </div>
-
-  </div>
-
-  <div class="text-center mt-3 text-white">
-    &copy; 2024 Zoo Arcadia. Tous droits réservés.
-  </div>
-</footer>
+  </footer>
 
 </body>
 <script type="module" src="Router/router.js"></script><!-- Pour inclure le systeme de routage -->
@@ -108,7 +108,8 @@
     │    │    ├──settings.json
     │    ├── images/ 
     │    │    ├──Heros.jpg
-    │    │    ├──
+    │    │    ├──animaux/
+    |    |    |
     │    │    ├──
     │    ├── node_modules/ 
     │    │    ├──@popperjs
