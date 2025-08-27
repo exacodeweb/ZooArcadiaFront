@@ -23960,31 +23960,32 @@ main {
   margin-bottom: 0px; /*250px*/
 }
 
+/*
 footer.footer {
-  padding: 15px;
-  /*position: absolute;*/
-  z-index: 1;
-  bottom: 0;
-  width: 100%;
+padding: 15px;
+/*position: absolute;*/ /* z-index: 1;
+bottom: 0;
+width: 100%;
 }
 
 /*footer.footer a:hover {
-  color: #f2a007;
+color: #f2a007;
 }*/
+/*
 a {
-  transition: color 0.3s ease;
+transition: color 0.3s ease;
 }
 
 p a:hover {
-  color: #da811b;
-  text-decoration: underline;
+color: $secondary; // l’orange accent que tu as défini
+text-decoration: underline;
 }
 
 p {
-  font-family: "Hind Madurai", Georgia, serif;
-  font-size: 18px;
+font-family: $font-family-serif;
+font-size: 18px;
 }
-
+*/
 .hero-scene {
   position: relative;
   margin-bottom: 15px;
@@ -24035,4 +24036,59 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   background-size: 70%;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.3);
+}
+.image-card img {
+  transition: all 0.3s;
+}
+.image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+footer.footer {
+  padding: 15px;
+  /*position: absolute;*/
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+
+/*footer.footer a:hover {
+  color: #f2a007;
+}*/
+/* a {
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: $secondary !important; // l’orange accent que tu as défini
+  text-decoration: underline;
+}*/
+footer a {
+  transition: color 0.3s ease;
+  color: #f2f2f2;
+}
+
+footer a:hover {
+  color: #da811b;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Hind Madurai", Georgia, serif;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
