@@ -4,11 +4,24 @@
 // Include any default variable overrides here (though functions won’t be available)
 
 // Couleurs Zoo Arcadia
-$success:   #2a7e50;  // vert nature → couleur principale
-$secondary: #da811b;  // orange accent → couleur secondaire
-$warning:   #f2a007;  // jaune doré → alerte / mise en valeur
-$dark:      #212529;  // gris anthracite → texte / éléments sombres #212529; #8B4513; #E9D985; #ADA8B6; #51a3a3; #5A9072; #C9A082; #C9C9C9
-$light:     #f2f2f2;  // gris clair → fond / contraste
+$primary:   #2a7e50;  // vert nature → couleur principale
+//$secondary: #da811b;  // orange accent → couleur secondaire
+//$warning:   #f2a007;  // jaune doré → alerte / mise en valeur
+//$dark:      #212529;  // gris anthracite → texte / éléments sombres #212529; #8B4513; #E9D985; #ADA8B6; #51a3a3; #5A9072; #C9A082; #C9C9C9
+//$light:     #f2f2f2;  // gris clair → fond / contraste
+
+// Couleurs principales (thème écolo)
+//$primary:   #2E7D32;   // Vert nature - symbole de vie et écologie
+$secondary:  #da811b;  //#6D4C41  // Marron bois - terre et durabilité
+$info:      #0288D1;   // Bleu doux - eau, ciel, énergie
+$light:     #F5F5DC;   // Beige clair - fond apaisant
+
+// Couleurs utilitaires
+$success:   #388E3C;   // Vert alternatif (confirmations, accents)
+$warning:   #F2A007;   // Orange doux (alerte non critique)
+$danger:    #DA811B;   // Orange foncé (mise en avant ou CTA)
+$dark:      #212529;   // Presque noir (textes foncés)
+$danger:    #DC3545;
 
 // Typographies Zoo Arcadia
 $font-family-sans-serif: "Montserrat", Arial, sans-serif !default;  
