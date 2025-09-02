@@ -1,0 +1,29 @@
+
+footer.footer {
+padding: 15px;
+//position: absolute; /*z-index: 1;*/
+bottom: 0;
+width: 100%; margin-top: auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+p {
+font-family: $font-family-serif;
+font-size: 18px;
+}
+
+/* experience Ux */
+footer a {
+  transition: color 0.3s ease;
+  color: $light; // par défaut en blanc
+}
+
+footer a:hover {
+  color: $secondary; // ton orange accent que j'ai défini
+  text-decoration: underline;
+}

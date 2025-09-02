@@ -1,0 +1,19 @@
+/* images d-block */
+.d-block {
+  /*.profile-pic*/
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+/* Icônes du carousel avec fond rond */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-size: 70%;
+}
